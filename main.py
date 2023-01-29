@@ -183,7 +183,7 @@ class Ui_MainWindow(object):
     def getopenfilename(self): #get the file
         #global path
         
-        openfilename = QtWidgets.QFileDialog.getOpenFileName(self.PIDanalyzer, "浏览", "./", "BBL files (*.BBL)")
+        openfilename = QtWidgets.QFileDialog.getOpenFileName(self.PIDanalyzer, "浏览", "./", "BLACKBOX files (*.BBL *.BFL)")
         #path = openfilename[0]
         self.lineEdit.setText(openfilename[0])
     
